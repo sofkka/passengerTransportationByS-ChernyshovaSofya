@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1f626ccc;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/background.png);
+    background-position: center;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+  #label-and-icon {
+      width: 200px;
+      font-size: 20px;
+      margin-left: 100px;
+  }
+
+  #img-account {
+      width: 70px;
+      margin-left: 15px;
+      margin-right: 100px;
+  }
+
+.account-container {
+    background-color: rgba(230, 249, 247, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+    .input-group label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .button {
+        background-color: rgba(68, 161, 177, 0.8);
+        border: none;
+        border-radius: 15px; /* Закругленные углы */
+        color: rgb(255, 255, 255); /* Белый текст */
+        font-size: 1rem; /* Уменьшили размер текста */
+        width: 150px;
+        margin-top: 15px;
+        margin-right: 20px;
+        transition: all 0.3s ease; /* Плавные переходы */
+        position: relative;
+        text-transform: uppercase; /* Текст в верхнем регистре */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень */
+        width: 250px;
+        height: 40px;
+        animation: moveInBottom 0.5s ease-out; /* Применяем анимацию */
+        animation-fill-mode: backwards;
+    }
+
+    .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .button:active {
+        transform: translateY(4px);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #booking-results {
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(230, 249, 247, 0.8);
+        border-radius: 15px;
+        text-align: center;
+        margin: 20px;
+        display: none; /* Скрываем блок изначально */
+    }
+
+.booking-item {
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .booking-item h3 {
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+    .booking-item p {
+        margin: 5px 0;
+        color: #555;
+    }
+
+.message {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+    .message.error {
+        background-color: #ffe6e6;
+        border: 1px solid #ffcccc;
+        color: #cc0000;
+    }
+
+    .message.info {
+        background-color: #e6f3ff;
+        border: 1px solid #b3d9ff;
+        color: #004080;
+    }
+
+
+.card {
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    margin: 20px;
+}
+  
+    .card:hover {
+        transform: scale(1.03);
+    }
+    
+    .card-header {
+        background-color: rgba(230, 249, 247, 0.8);
+        color: white;
+        padding: 10px;
+        border-radius: 30px;
+        width: 15rem;
+        text-align: center;
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-body h {
+        margin: 15px 30px;
+    }
+
+    .card-body button {
+        margin: 0px 15px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .transport-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .card-header h3 {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+.points {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.points div {
+    margin: auto;
+}
+
+.departure-destination {
+    background-color: rgba(230, 249, 247, 0.8);
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.departure-destination h2 {
+    margin: 5px;
+}
+
+.time-in-route-arrow {
+    display: grid;
+}
+
+.time-in-route-arrow h2, svg {
+    margin: 0px;
+}
+
+
+

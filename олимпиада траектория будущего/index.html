@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <img src="images/icon_project.png" alt="Иконка" id="label-and-icon">
+            <a href="account.html" style="text-decoration: none;" id="href-account">
+                <div style="display: flex; align-items: center;">
+                    <h2 id="name-account">Войти в аккаунт</h2>
+                    <img src="images/account.png" alt="Аккаунт" id="img-account">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="search-filters">
+        <div class="filter">
+            <label for="departure">Пункт отправления</label>
+            <select name="departure" id="departure">
+                <option value="" disabled selected hidden>Выберите пункт отправления</option> <!-- Подсказка -->
+            </select>
+        </div>
+        <div class="filter">
+            <label for="arrival">Пункт прибытия</label>
+            <select name="arrival" id="arrival">
+                <option value="" disabled selected hidden>Выберите пункт прибытия</option> <!-- Подсказка -->
+            </select>
+        </div>
+        <div class="filter">
+            <label for="transport-type">Тип транспорта</label>
+            <select name="transport-type" id="transport-type">
+                <option value="" disabled selected hidden>Выберите тип транспорта</option> <!-- Подсказка -->
+            </select>
+        </div>
+        <div class="filter" id="filter-date">
+            <div class="check-departure-date-interval">
+                <label>Дата отправления</label>
+                <div class="check-departure-date-checkbox-and-label">
+                    <input type="checkbox" id="checkbox-departure-date-interval">
+                    <label for="checkbox-departure-date-interval" id="check-departure-date-interval-label">
+                        Интервал дат
+                    </label>
+                </div>
+            </div>
+            <div class="dates">
+                <label for="departure-date"></label>
+                <input type="date" id="departure-date">
+                <div id="departure-date-interval" style="display: none;">
+                    <label for="departure-date-start"></label>
+                    <input type="date" id="departure-date-start">
+                    <label for="departure-date-end"></label>
+                    <input type="date" id="departure-date-end">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="button" id="button-search">Искать</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="routes-list">
+            <h3>Список рейсов</h3>
+        </div>
+    </div>
+
+    <!-- Модальное окно для бронирования -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Введите ваше ФИО</h2>
+            <input type="text" id="input-surname" placeholder="Фамилия">
+            <input type="text" id="input-name" placeholder="Имя">
+            <input type="text" id="input-patronymic" placeholder="Отчество">
+            <button id="confirm-booking">Подтвердить бронирование</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для подтверждения бронирования -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Подтверждение бронирования</h2>
+            <p id="confirmation-details"></p>
+            <button id="final-confirm">Подтвердить</button>
+        </div>
+    </div>
+    
+    <script src="main.js" defer></script>
+</body>
+</html>

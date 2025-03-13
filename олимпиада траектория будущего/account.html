@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAccount.css">
+    <title>Аккаунт пользователя</title>
+</head>
+<body>
+    <div class="header">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <a href="javascript:history.back()" style="text-decoration: none;" id="label-and-icon">
+                <div style="display: flex; align-items: center;">
+                    <img src="images/icon_project.png" alt="Иконка" id="label-and-icon">
+                </div>
+            </a>
+            <div style="display: flex; align-items: center;">
+                <img src="images/account.png" alt="Аккаунт" id="img-account">
+            </div>
+        </div>
+    </div>
+
+    <div class="account-container">
+        <h2>Личный кабинет</h2>
+        <div class="input-group">
+            <label>Фамилия:</label>
+            <input type="text" id="input-surname" value="Иванов">
+        </div>
+        <div class="input-group">
+            <label>Имя:</label>
+            <input type="text" id="input-name" value="Иван">
+        </div>
+        <div class="input-group">
+            <label>Отчество:</label>
+            <input type="text" id="input-patronymic" value="Иванович">
+        </div>
+        <button class="button" id="button-enter-acc">Войти в аккаунт</button>
+    </div>
+
+    <div id="booking-results">
+        <!-- Здесь будут отображаться результаты поиска бронирований -->
+    </div>
+
+    <script src="mainAccount.js" defer></script>
+</body>
+</html>
